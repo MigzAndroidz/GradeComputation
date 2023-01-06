@@ -42,8 +42,9 @@
             System.out.print("Enter the weight for filipino: ");
             filipinoWeight = sc.nextDouble();
             
-            double weightedAverage = (mathGrade * mathWeight) + (englishGrade * englishWeight) + (scienceGrade * scienceWeight) + (mapehGrade * mapehWeight) + (filipinoGrade * filipinoWeight);
-            
+           
+             double weightedAverage = (mathGrade + englishGrade + scienceGrade + mapehGrade + filipinoGrade) / 5;
+             
             if(weightedAverage >=100){
                 System.out.println("Your weighted average is " + weightedAverage + ".Highest Honors");
             } else if (weightedAverage >=95){
